@@ -1,0 +1,8 @@
+{{page-title "Posts Page"}}
+<h1>Post Page</h1>
+<ul>
+    {{#each @model as | posts |}}
+        <li>{{posts.title}}</li>
+    {{/each}}
+</ul>
+{{outlet}}

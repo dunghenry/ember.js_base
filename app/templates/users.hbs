@@ -1,0 +1,13 @@
+{{page-title "Users Page"}}
+<h1>Users Page</h1>
+{{!-- <ul>
+    {{#each @model as | users |}}
+        <li>{{users.username}}</li>
+    {{/each}}
+</ul> --}}
+
+<UserItem 
+    @title="List of Users"
+    @users={{@model}}
+/>
+{{outlet}}
